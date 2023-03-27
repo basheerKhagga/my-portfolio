@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Muhammad Dawood - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Muhammad Dawood
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          dawoodkhagga69@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +923171610700
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recommendations">Recommendation</a>
+
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/broWhat.png" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Muhammad Dawood! 👋
+          </h1>
+          <p>
+            I am a student with 13 years of academic experience at primary, high school, college and university level.
+            Just kidding, this is not all I'm good at. I've programmed backend for two projects. They call me gcc the way I be debugging the 
+            C++ code. I love assembly language too. Front-end requires imagination 😢.  
+            
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>4 months experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/javaScript.png"/>
+          <h6>JavaScript</h6>
+          <p>1 month experience</p>
+        </div>
+        
+        <div class="skill">
+          <img src="html_finalprojimages/asm1.jpeg"/>
+          <h6>Assembly language 16-bit</h6>
+          <p>4 months experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/cpp.png"/>
+          <h6>C++</h6>
+          <p>1 year experience</p>
+        </div>
+
+        <div class="skill">
+          <img src="html_finalprojimages/flutter.png"/>
+          <h6>Flutter</h6>
+          <p>4 weeks experience</p>
+        </div>
+        <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Network Emulator</h3>
+            <ul>
+              <li>As part of my data structures course, I developed a network emulator in C++ that can simulate the real world network on a single computer by writing scripts.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Brick breaker in assembly</h3>
+            <ul>
+              <li>I created a brick breaker game in 16-bit assembly language, a low-level programming language that directly controls the hardware. The game uses software and hardware interrupts for lifeline, powers, timer, etc. The game is fast and efficient.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Anime library in C++</h3>
+            <ul>
+              <li>I created an anime library project that allows users to browse, search, and rate different anime titles. The project follows the rules of object oriented programming, which is a fundamental programming paradigm that organizes data and behavior into classes and objects.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Dawood is a skilled communicator who can express ideas clearly and persuasively in both written and oral forms.
+          Dawood has demonstrated the ability to listen actively and empathetically to others and to tailor the message to the audience and context.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Dawood is a proficient researcher who can conduct thorough and accurate investigations on various topics and issues.
+          Dawood has demonstrated the ability to use appropriate sources and methods, to analyze and synthesize information, and to present findings in a logical and coherent manner.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Dawood is a talented leader who can motivate and inspire others to achieve common goals.
+          Dawood has demonstrated the ability to set clear and realistic objectives, to delegate tasks effectively, and to provide constructive feedback and recognition.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)" style="background-color:#edeaea;"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message" style="background-color:#edeaea;"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+        </svg>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
